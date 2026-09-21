@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ShopNest</div>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="search for product...">
+                <button onclick="searchProducts()">🔎</button>
+            </div>
+
+            <div class="nav-links">
+                <a href="account.html">👤 Account</a>
+                <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+
+            <div class="categories">
+
+                <a href="#" class="category-link" data-category="all">All</a>
+                <a href="#" class="category-link" data-category="fashion">Fashion</a>
+                <a href="#" class="category-link" data-category="beauty">Beauty</a>
+                <a href="#" class="category-link" data-category="electronics">Electronics</a>
+                <a href="#" class="category-link" data-category="home$kitchen">Home&kitchen</a>
+                <a href="#" class="category-link" data-category="shoes">Shoes</a>
+                <a href="#" class="category-link" data-category="accessories">Accesories</a>
+
+            </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p>WELCOME TO SHOPNEST</p>
+
+            <h1>EVERYTHING YOU LOVE,ALL IN ONE PLACE</h1>
+
+            <p>Discover fashion,beauty,electronics,home essentials and much more.</p>
+
+            <button>Shop Now</button>
+
+        </div>
+
+    </section>
+
+    <section class="categories-section">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-list">
+
+            <div class="category-card">
+
+                <div class="category-icon">👗</div>
+
+                <h3>Fashion</h3>
+
+            </div>
+
+            <div class="category-card">
+
+                <div class="category-icon">💄</div>
+
+                <h3>Beauty</h3>
+
+                </div>
+
+                <div class="category-card">
+
+                    <div class="category-icon">💻</div>
+
+                    <h3>Electronics</h3>
+
+                    </div>
+
+                    <div class="category-card">
+
+                        <div class="category-icon">🏠</div>
+
+                        <h3>Home&Kitchen</h3>
+
+                        </div>
+
+                        <div class="category-card">
+
+                            <div class="category-icon">👟</div>
+
+                            <h3>Shoes</h3>
+
+                        </div>
+
+                        <div class="category-card">
+
+                            <div class="category-icon">💍</div>
+
+                            <h3>Accesories</h3>
+
+                        </div>
+
+                    </div>
+
+    </section>
+
+    <section class="flash-deals">
+
+    <h2>Shop Our Products</h2>
+    <p>Discover beautiful products at amazing prices</p>
+
+
+    <!-- DRESSES -->
+    <h2 class="product-category-title">Dresses</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card fashion">
+            <img src="dress1.jpg" alt="Beautiful Dress">
+            <div class="product-info">
+                <h3 class="product-name">Beautiful Dress</h3>
+                <p class="price">₦50,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="dress2.jpg" alt="Casual Dress">
+            <div class="product-info">
+                <h3>Casual Dress</h3>
+                <p class="price">₦20,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="dress3.jpg" alt="Elegant Dress">
+            <div class="product-info">
+                <h3>Elegant Dress</h3>
+                <p class="price">₦28,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="dress4.jpg" alt="Woman Dress">
+            <div class="product-info">
+                <h3>Woman Dress</h3>
+                <p class="price">₦35,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="dress5.jpg" alt="Prom Dress">
+            <div class="product-info">
+                <h3>Prom Dress</h3>
+                <p class="price">₦50,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- TOPS -->
+    <h2 class="product-category-title">Tops</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card fashion">
+            <img src="top1.jpg" alt="Jersey Top">
+            <div class="product-info">
+                <h3>Jersey Top</h3>
+                <p class="price">₦12,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="top2.jpg" alt="Basic Top">
+            <div class="product-info">
+                <h3>Basic Top</h3>
+                <p class="price">₦5,500</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="top3.jpg" alt="Mesh Top">
+            <div class="product-info">
+                <h3>Mesh Top</h3>
+                <p class="price">₦5,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="top4.jpg" alt="Baggy Top">
+            <div class="product-info">
+                <h3>Baggy Top</h3>
+                <p class="price">₦10,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="top5.jpg" alt="Hoodie">
+            <div class="product-info">
+                <h3>Hoodie</h3>
+                <p class="price">₦12,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- TROUSERS -->
+    <h2 class="product-category-title">Trousers</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card fashion">
+            <img src="trouser1.jpg" alt="Baggy Jeans">
+            <div class="product-info">
+                <h3>Baggy Jeans</h3>
+                <p class="price">₦18,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="trouser2.jpg" alt="Sweatpant">
+            <div class="product-info">
+                <h3>Sweatpant</h3>
+                <p class="price">₦20,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="trouser3.jpg" alt="Joggers">
+            <div class="product-info">
+                <h3>Joggers</h3>
+                <p class="price">₦15,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="trouser4.jpg" alt="Boyfriend Jeans">
+            <div class="product-info">
+                <h3>Boyfriend Jeans</h3>
+                <p class="price">₦15,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="trouser5.jpg" alt="High Waist Trouser">
+            <div class="product-info">
+                <h3>High Waist Trouser</h3>
+                <p class="price">₦10,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- BAGS -->
+    <h2 class="product-category-title">Bags</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card fashion">
+            <img src="bag1.jpg" alt="Fashion Bag">
+            <div class="product-info">
+                <h3>Fashion Bag</h3>
+                <p class="price">₦12,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="bag2.jpg" alt="Tote Bag">
+            <div class="product-info">
+                <h3>Tote Bag</h3>
+                <p class="price">₦7,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="bag3.jpg" alt="Clutch Bag">
+            <div class="product-info">
+                <h3>Clutch Bag</h3>
+                <p class="price">₦8,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="bag4.jpg" alt="Cross Bag">
+            <div class="product-info">
+                <h3>Cross Bag</h3>
+                <p class="price">₦9,000</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="product-card fashion">
+            <img src="bag5.jpg" alt="Mini Bag">
+            <div class="product-info">
+                <h3>Mini Bag</h3>
+                <p class="price">₦4,500</p>
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- BEAUTY -->
+<h2 class="product-category-title">Beauty</h2>
+
+<div class="product-grid">
+
+    <div class="product-card beauty">
+        <img src="beauty1.jpg" alt="Lipstick">
+        <div class="product-info">
+            <h3>Lipstick</h3>
+            <p class="price">₦5,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty2.jpg" alt="Foundation">
+        <div class="product-info">
+            <h3>Foundation</h3>
+            <p class="price">₦8,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty3.jpg" alt="Perfume">
+        <div class="product-info">
+            <h3>Perfume</h3>
+            <p class="price">₦15,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty4.jpg" alt="Makeup Kit">
+        <div class="product-info">
+            <h3>Makeup Kit</h3>
+            <p class="price">₦20,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty5.jpg" alt="Eyeshadow Palette">
+        <div class="product-info">
+            <h3>Eyeshadow Palette</h3>
+            <p class="price">₦7,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty6.jpg" alt="Skincare Set">
+        <div class="product-info">
+            <h3>Skincare Set</h3>
+            <p class="price">₦18,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty7.jpg" alt="Hair">
+        <div class="product-info">
+            <h3>Hair</h3>
+            <p class="price">₦22,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty8.jpg" alt="Makeup Brushes">
+        <div class="product-info">
+            <h3>Makeup Brushes</h3>
+            <p class="price">₦6,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty9.jpg" alt="Nail Kit">
+        <div class="product-info">
+            <h3>Nail Kit</h3>
+            <p class="price">₦10,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card beauty">
+        <img src="beauty10.jpg" alt="Elegant Nails">
+        <div class="product-info">
+            <h3>Elegant Nails</h3>
+            <p class="price">₦6,500</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+</div>
+
+    <!-- ELECTRONICS -->
+<h2 class="product-category-title">Electronics</h2>
+
+<div class="product-grid">
+
+    <div class="product-card electronics">
+        <img src="electronics1.jpg" alt="Smartphone">
+        <div class="product-info">
+            <h3>Smartphone</h3>
+            <p class="price">₦150,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics2.jpg" alt="Wireless Headphones">
+        <div class="product-info">
+            <h3>Wireless Headphones</h3>
+            <p class="price">₦25,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics3.jpg" alt="Smart Watch">
+        <div class="product-info">
+            <h3>Smart Watch</h3>
+            <p class="price">₦18,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics4.jpg" alt="Smart Tech Set">
+        <div class="product-info">
+            <h3>Smart Tech Set</h3>
+            <p class="price">₦20,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics5.jpg" alt="Power Bank">
+        <div class="product-info">
+            <h3>Power Bank</h3>
+            <p class="price">₦15,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics6.jpg" alt="Wireless Earbuds">
+        <div class="product-info">
+            <h3>Wireless Earbuds</h3>
+            <p class="price">₦12,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics7.jpg" alt="Tablet">
+        <div class="product-info">
+            <h3>Tablet</h3>
+            <p class="price">₦120,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics8.jpg" alt="Digital Camera">
+        <div class="product-info">
+            <h3>Digital Camera</h3>
+            <p class="price">₦200,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics9.jpg" alt="Fast Charger">
+        <div class="product-info">
+            <h3>Fast Charger</h3>
+            <p class="price">₦8,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card electronics">
+        <img src="electronics10.jpg" alt="Laptop">
+        <div class="product-info">
+            <h3>Laptop</h3>
+            <p class="price">₦450,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- HOME & KITCHEN -->
+<h2 class="product-category-title">Home & Kitchen</h2>
+
+<div class="product-grid">
+
+    <div class="product-card home$kitchen">
+        <img src="home1.jpg" alt="Blender">
+        <div class="product-info">
+            <h3>Blender</h3>
+            <p class="price">₦35,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home2.jpg" alt="Air Fryer">
+        <div class="product-info">
+            <h3>Air Fryer</h3>
+            <p class="price">₦55,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home3.jpg" alt="Electric Kettle">
+        <div class="product-info">
+            <h3>Electric Kettle</h3>
+            <p class="price">₦18,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home4.jpg" alt="Cookware Set">
+        <div class="product-info">
+            <h3>Cookware Set</h3>
+            <p class="price">₦45,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home5.jpg" alt="Dinner Set">
+        <div class="product-info">
+            <h3>Dinner Set</h3>
+            <p class="price">₦25,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home6.jpg" alt="Coffee Mug">
+        <div class="product-info">
+            <h3>Coffee Mug</h3>
+            <p class="price">₦4,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home7.jpg" alt="Storage Box">
+        <div class="product-info">
+            <h3>Storage Box</h3>
+            <p class="price">₦8,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home8.jpg" alt="Table Lamp">
+        <div class="product-info">
+            <h3>Table Lamp</h3>
+            <p class="price">₦12,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home9.jpg" alt="Decorative Pillow">
+        <div class="product-info">
+            <h3>Decorative Pillow</h3>
+            <p class="price">₦7,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card home$kitchen">
+        <img src="home10.jpg" alt="Cutlery Set">
+        <div class="product-info">
+            <h3>Cutlery Set</h3>
+            <p class="price">₦10,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- SHOES -->
+<h2 class="product-category-title">Shoes</h2>
+
+<div class="product-grid">
+
+    <div class="product-card shoes">
+        <img src="shoes1.jpg" alt="Sneakers">
+        <div class="product-info">
+            <h3>Sneakers</h3>
+            <p class="price">₦30,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes2.jpg" alt="High Heels">
+        <div class="product-info">
+            <h3>High Heels</h3>
+            <p class="price">₦25,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes3.jpg" alt="Flat Shoes">
+        <div class="product-info">
+            <h3>Flat Shoes</h3>
+            <p class="price">₦18,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes4.jpg" alt="Sandals">
+        <div class="product-info">
+            <h3>Sandals</h3>
+            <p class="price">₦15,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes5.jpg" alt="Loafers">
+        <div class="product-info">
+            <h3>Loafers</h3>
+            <p class="price">₦22,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes6.jpg" alt="Boots">
+        <div class="product-info">
+            <h3>Boots</h3>
+            <p class="price">₦35,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes7.jpg" alt="Slides">
+        <div class="product-info">
+            <h3>Slides</h3>
+            <p class="price">₦10,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes8.jpg" alt="Wedges">
+        <div class="product-info">
+            <h3>Wedges</h3>
+            <p class="price">₦24,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes9.jpg" alt="Running Shoes">
+        <div class="product-info">
+            <h3>Running Shoes</h3>
+            <p class="price">₦28,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card shoes">
+        <img src="shoes10.jpg" alt="Platform Shoes">
+        <div class="product-info">
+            <h3>Platform Shoes</h3>
+            <p class="price">₦27,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- ACCESSORIES -->
+<h2 class="product-category-title">Accessories</h2>
+
+<div class="product-grid">
+
+    <div class="product-card accessories">
+        <img src="accesories1.jpg" alt="Gold Necklace">
+        <div class="product-info">
+            <h3>Gold Necklace</h3>
+            <p class="price">₦12,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories2.jpg" alt="Pearl Necklace">
+        <div class="product-info">
+            <h3>Pearl Necklace</h3>
+            <p class="price">₦15,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories3.jpg" alt="Gold Earrings">
+        <div class="product-info">
+            <h3>Gold Earrings</h3>
+            <p class="price">₦8,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories4.jpg" alt="Hoop Earrings">
+        <div class="product-info">
+            <h3>Hoop Earrings</h3>
+            <p class="price">₦6,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories5.jpg" alt="Bracelet">
+        <div class="product-info">
+            <h3>Bracelet</h3>
+            <p class="price">₦7,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories6.jpg" alt="Charm Bracelet">
+        <div class="product-info">
+            <h3>Charm Bracelet</h3>
+            <p class="price">₦9,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories7.jpg" alt="Jewelry Ring">
+        <div class="product-info">
+            <h3>Jewelry Ring</h3>
+            <p class="price">₦5,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories8.jpg" alt="Anklet">
+        <div class="product-info">
+            <h3>Anklet</h3>
+            <p class="price">₦6,500</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories9.jpg" alt="Jewelry Set">
+        <div class="product-info">
+            <h3>Jewelry Set</h3>
+            <p class="price">₦18,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+    <div class="product-card accessories">
+        <img src="accesories10.jpg" alt="Statement Earrings">
+        <div class="product-info">
+            <h3>Statement Earrings</h3>
+            <p class="price">₦10,000</p>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+</section>
+
+<section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a question? We'd love to hear from you!</p>
+
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <h2>ShopNest</h2>
+        <p>Everything you love, all in one place.</p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#">About Us</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopNest. All rights reserved.
+        </p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
