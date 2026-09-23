@@ -537,7 +537,7 @@ color: #ffe3f0;
 
     .product-card img {
         width: 100% !important;
-        height: 180px !important;
+        height: 150px !important;
         object-fit: contain !important;
         display: block;
     }
