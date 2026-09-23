@@ -237,3 +237,5 @@ if (productName) {
         alert("You selected: Beautiful Dress");
     });
 }
+
+<button id="checkout-btn" onclick="goToCheckout()">CHECKOUT</button>
