@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ShopNest</div>
+
+            <div class="nav-links">
+                <a href="cart.html">🛒 Back to Cart</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="checkout-page">
+
+        <h1>🛍️ Checkout</h1>
+        <p>Complete your order details below.</p>
+
+        <form class="checkout-form">
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+
+            <label>Delivery Address</label>
+            <textarea placeholder="Enter your delivery address" rows="4" required></textarea>
+
+            <label>Payment Method</label>
+
+            <select required>
+                <option value="">Select payment method</option>
+                <option value="cash">Cash on Delivery</option>
+                <option value="demo">Demo Payment</option>
+            </select>
+
+            <button type="submit">PLACE ORDER</button>
+
+        </form>
+
+    </section>
+
+</body>
+</html>
