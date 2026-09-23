@@ -515,5 +515,51 @@ color: #ffe3f0;
     cursor: pointer;
     font-size: 16px;
 }
-    
-    
+
+/* MOBILE PHONE LAYOUT */
+@media screen and (max-width: 600px) {
+
+    .product-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+    }
+
+    .product-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .product-card img {
+        width: 100% !important;
+        height: 180px !important;
+        object-fit: contain !important;
+        display: block;
+    }
+
+    .product-info {
+        padding: 8px;
+        text-align: center;
+    }
+
+    .product-info h3 {
+        font-size: 14px;
+        line-height: 1.2;
+        margin: 6px 0;
+    }
+
+    .product-info .price {
+        font-size: 14px;
+    }
+
+    .product-info button {
+        width: 100%;
+        font-size: 12px;
+        padding: 9px 4px;
+    }
+}
